@@ -28,11 +28,9 @@ export const getPerson = createAsyncThunk("person/getPerson", async ({ currentLa
             .replace(/whwokao/g, "next")
 
          const preparedJson = await JSON.parse(preparedText);
-         console.log(preparedJson);
          return preparedJson
       } else {
          const json = await res.json();
-         console.log(json);
          return json
       }
    } catch (err) {

@@ -2,7 +2,6 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 
 
 export const getPeople = createAsyncThunk("people/getPeople", async ({ currentLang, currentPage, options = {} }) => {
-   console.log(currentLang, currentPage, options);
    let queryLang = ''
    if (currentLang === 'wo') {
       queryLang = 'format=wookiee&'
