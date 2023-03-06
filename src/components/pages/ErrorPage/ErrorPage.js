@@ -6,7 +6,7 @@ const ErrorPage = () => {
    const navigate = useNavigate()
 
    const goToBackHandler = () => {
-      navigate(`./..`)
+      navigate(`/starwars-app`)
    }
 
    return (
