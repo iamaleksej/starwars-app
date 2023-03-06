@@ -9,7 +9,7 @@ const CheckId = () => {
       return (
          (personId <= totalCount && personId > 0)
             ? <Outlet />
-            : <Navigate to="/not-found" state={{ from: location }} replace />
+            : <Navigate to="/starwars-app/not-found" state={{ from: location }} replace />
       )
 }
 

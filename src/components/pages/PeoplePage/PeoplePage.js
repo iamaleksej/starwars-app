@@ -92,7 +92,7 @@ const PeoplePage = () => {
       <>
          <Routes>
             <Route element={<CheckId />}>
-               <Route path="/:personId" element={<ModalPeopleItem />} />
+               <Route path="/starwars-app/:personId" element={<ModalPeopleItem />} />
             </Route>
          </Routes>
          <div className="people-wrapper">

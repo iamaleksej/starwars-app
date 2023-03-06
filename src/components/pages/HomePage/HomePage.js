@@ -19,7 +19,7 @@ const HomePage = () => {
                      information about your favorite characters
                   </h2>
                   <div className="home-text__item home-text__btn">
-                     <Link to="/people">
+                     <Link to="/starwars-app/people">
                         See more...
                      </Link>
                   </div>

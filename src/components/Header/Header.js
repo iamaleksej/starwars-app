@@ -11,20 +11,20 @@ const Header = () => {
          <div className="container">
             <div className="header">
                <div className="logo">
-                  <Link to='/'>
+                  <Link to='/starwars-app'>
                      <img src={imgLogo} alt="logo" />
                   </Link>
                </div>
                <nav className="nav-menu">
                   <NavLink
-                     to="/"
+                     to="/starwars-app"
                      className='nav-menu__item'
                   >
                      <p>Home</p>
                      <div className='active-line'></div>
                   </NavLink>
                   <NavLink
-                     to="/people"
+                     to="/starwars-app/people"
                      className="nav-menu__item"
                   >
                      <p>Characters</p>

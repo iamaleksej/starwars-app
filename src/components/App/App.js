@@ -12,12 +12,12 @@ const App = () => {
    return (
       <>
          <Routes>
-            <Route path="/" element={<Layout />}>
+            <Route path="/starwars-app" element={<Layout />}>
                <Route index element={<HomePage />} />
-               <Route path="/people/*" element={<PeoplePage />} />
+               <Route path="/starwars-app/people/*" element={<PeoplePage />} />
             </Route>
             <Route path="*" element={<ErrorPage />} />
-            <Route path="/not-found" element={<ErrorPage />} />
+            <Route path="/starwars-app/not-found" element={<ErrorPage />} />
          </Routes>
       </>
    )
