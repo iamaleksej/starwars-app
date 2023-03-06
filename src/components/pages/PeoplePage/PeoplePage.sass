@@ -1,0 +1,198 @@
+.people
+   display: flex
+   gap: 35px
+   flex-wrap: wrap
+   margin-top: 28px
+   &-wrapper
+      color: #000
+      height: 100%
+      background: #F5F5F5
+      margin-bottom: 200px
+   &__item
+      background: #F0F0F0
+      border-radius: 8px
+      height: 137px
+      width: calc((100% - 70px) / 3)
+      padding: 5px 25px 12px 25px
+      cursor: pointer
+      position: relative
+      box-shadow: 7px 8px 10px #c5c5c5
+   &__name
+      height: 28px
+      font-weight: 700
+      font-size: 18px
+      line-height: 21px
+      color: #212121
+      text-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1)
+   &__text
+      font-weight: 400
+      font-size: 12px
+      line-height: 14px
+      text-align: center
+      color: #4B4B4B
+      margin-top: 6px
+   &__gender
+      background: #73D677
+      box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18)
+      padding: 3px 15px
+      border-radius: 11px
+      font-family: 'Roboto'
+      font-style: normal
+      font-weight: 400
+      font-size: 12px
+      line-height: 14px
+      text-align: center
+      color: #212121
+   &__birthyear
+      background: #07D6F2
+      box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18)
+      border-radius: 11px
+      padding: 3px 15px
+      font-family: 'Roboto'
+      font-style: normal
+      font-weight: 400
+      font-size: 12px
+      line-height: 14px
+      text-align: center
+      color: #212121
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+   &__circle
+      font-family: 'Karla'
+      font-style: normal
+      font-weight: 400
+      font-size: 15px
+      line-height: 18px
+      display: flex
+      align-items: center
+      text-align: center
+      justify-content: center
+      border-radius: 50%
+      color: #212121
+      border: 3px solid #212121
+      width: 35px
+      height: 35px
+      margin: auto
+   &__height-mass-wrap
+      display: flex
+      gap: 13px
+      margin-top: 10px
+   &__bottom-info
+      position: absolute
+      display: flex
+      bottom: 12px
+      left: 25px
+      gap: 13px
+
+.title
+   font-weight: 400
+   font-size: 35px
+   line-height: 41px
+   text-align: center
+   letter-spacing: 3px
+   color: #000000
+   padding: 76px 0
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+.language
+   position: absolute
+   width: 90px
+   height: 20px
+   right: 0
+   top: 28px
+   font-family: 'Source Sans Pro'
+   font-style: normal
+   font-weight: 400
+   font-size: 16px
+   line-height: 20px
+   display: flex
+   align-items: center
+   text-align: center
+   color: #4B4B4B
+.filter
+   display: flex
+   gap: 18px
+   &-list
+      position: absolute
+      background: #F2F2F2
+      box-shadow: 4px 4px 8px rgba(1, 28, 64, 0.2)
+      border-radius: 8px
+      margin-top: 9px
+      width: 135px
+      padding: 17px 0
+      display: flex
+      flex-direction: column
+      z-index: 10
+
+      &__item
+         font-family: 'Source Sans Pro'
+         font-style: normal
+         font-weight: 400
+         font-size: 16px
+         line-height: 20px
+         color: #000000
+         flex: none
+         order: 0
+         flex-grow: 0
+         cursor: pointer
+         padding: 6px 32px
+         &:hover
+            background: #c9c9c9
+      &-selected
+         background: #F2F2F2
+         box-shadow: 2px 2px 2px rgba(33, 33, 33, 0.1)
+         border-radius: 4px
+         display: flex
+         justify-content: space-between
+         width: 135px
+         height: 24px
+         position: relative
+         cursor: pointer
+         & p
+            height: 100%
+            width: 100%
+.down-arrow
+   border: solid black
+   border-width: 0 3px 3px 0
+   display: inline-block
+   padding: 3px
+   transform: rotate(45deg)
+   -webkit-transform: rotate(45deg)
+   width: 5px
+   height: 5px
+   margin: 7px 10px 0 0
+   &.rotate
+      transform: rotate(225deg)
+      -webkit-transform: rotate(225deg)
+
+.gender_green
+   background: #73D677
+   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18)
+.gender_purple
+   background: #C956FF
+   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18)
+.gender_yellow
+   background: #F5DB13
+   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.18)
+
+.translate
+   position: absolute
+   width: 90px
+   height: 90px
+   right: 10px
+   top: 22.5px
+   background: #F28F16
+   border-radius: 50%
+   cursor: pointer
+
+   &-wrapper
+      height: 130px
+      width: 100%
+      background: #F5F5F5
+      position: fixed
+      bottom: 0
+      & .image
+         width: 70px
+         height: 70px
+         position: absolute
+         top: 50%
+         left: 50%
+         transform: translate(-50%, -50%)

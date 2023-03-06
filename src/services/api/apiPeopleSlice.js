@@ -1,0 +1,41 @@
+import { createAsyncThunk } from "@reduxjs/toolkit";
+
+
+export const getPeople = createAsyncThunk("people/getPeople", async ({ currentLang, currentPage, options = {} }) => {
+   console.log(currentLang, currentPage, options);
+   let queryLang = ''
+   if (currentLang === 'wo') {
+      queryLang = 'format=wookiee&'
+   }
+   try {
+      const res = await fetch(
+         `https://swapi.dev/api/people/?${queryLang}page=${currentPage}`, options
+      )
+      if (currentLang === 'wo') {
+         const text = await res.text()
+         const preparedText = text
+            .replace(/whhuanan/g, '"whhuanan"')
+            .replace(/rcwochuanaoc/g, "results")
+            .replace(/oaoohuwhao/g, "count")
+            .replace(/hurcan/g, "url")
+            .replace(/whrascwo/g, "name")
+            .replace(/acwoahrracao/g, "height")
+            .replace(/rhahrcaoac_roworarc/g, "birth_year")
+            .replace(/scracc/g, "mass")
+            .replace(/rrwowhwaworc/g, "gender")
+            .replace(/acraahrc_oaooanoorc/g, "hair_color")
+            .replace(/corahwh_oaooanoorc/g, "skin_color")
+            .replace(/worowo_oaooanoorc/g, "eye_color")
+            .replace(/whwokao/g, "next")
+
+         const preparedJson = await JSON.parse(preparedText);
+         return preparedJson
+      } else {
+         const json = await res.json();
+         return json
+      }
+   } catch (err) {
+      console.log(err);
+   }
+
+});

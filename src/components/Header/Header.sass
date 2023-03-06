@@ -1,0 +1,39 @@
+.header
+   display: flex
+   justify-content: space-between
+   align-items: center
+   &-wrapper
+      height: 96px
+      width: 100%
+      background: #1F2A63
+      filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25))
+
+.logo
+   height: 100%
+   display: flex
+   align-items: center
+
+.nav-menu
+   gap: 74px
+   display: flex
+   font-size: 25px
+   line-height: 29px
+   font-weight: 400
+   height: 93px
+   &__item
+      color: #F6F7F9
+      text-decoration: none
+      margin: auto
+      padding: 15px 0
+      pursor: pointer
+      position: relative
+
+.active .active-line
+   height: 3px
+   background-color: #CFDAB0
+   border-radius: 50px
+   position: absolute
+   width: 80%
+   margin-top: 11px
+   left: 50%
+   transform: translateX(-50%)

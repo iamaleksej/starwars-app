@@ -1,0 +1,105 @@
+.modal
+   width: 797px
+   height: 371px
+   position: absolute
+   left: 50%
+   top: 50%
+   transform: translate(-50%,-50%)
+   align-items: center
+   background: linear-gradient(180deg, #17002F 42.19%, #1F2A63 100%)
+   border-radius: 8px
+   border: 0
+   outline: none
+   &__close-btn
+      background: none
+      border: 0
+      position: absolute
+      right: 0
+      top: -40px
+      cursor: pointer
+      outline: none
+      & .image
+         outline: none
+   &-person
+      height: 100%
+      width: 100%
+      display: flex
+      &__icon
+         background: #1F2A63
+         box-shadow: 4px 4px 8px rgba(1, 28, 64, 0.2)
+         border-radius: 8px 0px 0px 8px
+         width: 365px
+         height: 100%
+         position: relative
+         & .image
+            width: auto
+            height: auto
+            margin: auto
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+      &__gender-birthyear
+         display: flex
+         position: absolute
+         bottom: 16px
+         right: 13px
+         gap: 13px
+      &__characters
+         padding: 30px 15px 25px 15px
+      &__name
+         font-weight: 700
+         font-size: 36px
+         line-height: 42px
+         color: #FDFDFD
+         text-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1)
+      &__colors
+         margin-top: 23px
+         background: #FDFDFD
+         box-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1)
+         border-radius: 8px
+         padding: 15px 23px
+      &__color
+         font-weight: 400
+         font-size: 16px
+         line-height: 19px
+         display: flex
+         align-items: center
+         color: #000000
+      &__height-mass
+         display: flex
+         gap: 24px
+         position: absolute
+         bottom: 25px
+      &__mass
+         padding: 8px 24px
+         background: #FDFDFD
+         box-shadow: 4px 4px 24px rgba(1, 17, 38, 0.2)
+         border-radius: 8px
+      &__height
+         padding: 8px 24px
+         background: #FDFDFD
+         box-shadow: 4px 4px 24px rgba(1, 17, 38, 0.2)
+         border-radius: 8px
+
+      &__circle
+         font-weight: 400
+         font-size: 15px
+         line-height: 18px
+         display: flex
+         align-items: center
+         text-align: center
+         justify-content: center
+         border-radius: 50%
+         color: #212121
+         border: 3px solid #212121
+         width: 35px
+         height: 35px
+         margin: auto
+      &__text
+         font-weight: 400
+         font-size: 12px
+         line-height: 14px
+         text-align: center
+         color: #4B4B4B
+         margin-top: 6px
